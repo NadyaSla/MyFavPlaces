@@ -1,3 +1,14 @@
+/*Font for whole page*/
+body {
+  font-family: "Tilt Neon";
+}
+
+/*Background for main content*/
+main {
+  background-color: rgb(160, 235, 158);
+}
+
+/*Styles for heading*/
 header {
     background-image: linear-gradient(to bottom, rgba(56, 55, 55, 0.55), rgba(56, 55, 55, 0.55)), url("images/ilya-pavlov-XPT-OtA0E-8-unsplash.jpg");
     background-size: cover;
@@ -40,9 +51,10 @@ header {
     list-style: none;
   }
 
+  /*Styles for introduction text and image*/
   #articleintro {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 12px;
+    padding-left: 12px;
     margin-bottom: 40px;
     padding-top: 20px;
     font-size:larger;
@@ -54,14 +66,12 @@ header {
     padding-right: 25px;
   }
 
-  main {
-    background-color: rgb(160, 235, 158);
-  }
-
+  /*Styles for main sections*/
   section {
     padding-bottom: 30px;
   }
 
+  /*Styles for bonus*/
   #bonus {
     border-radius: 50%;
   }
@@ -70,12 +80,26 @@ header {
     font-size: x-large;
   }
 
+  /*Styles for footer*/
   footer {
     height: 70px;
     background-color: rgb(61, 53, 53);
     color: white;
   }
 
-  body {
-    font-family: "Tilt Neon";
+  /*Media queries*/
+  @media (max-width:490px) {
+    li {
+      margin-right: 10px;
+      font-size: small;
+    }
+    footer {
+      display:flex;
+      flex-wrap: wrap;
+      text-align: center;
+      flex: 100%;
+    } 
+    footer h6 {
+      font-size: smaller;
+    }
   }
